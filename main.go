@@ -42,7 +42,7 @@ func main() {
 	dxlib.SetDrawScreen(-2)
 
 	var images map[string]int = make(map[string]int)
-	for i := 0; i < 50 ; i++ {
+	for i := 0; i < 10 ; i++ {
 		fname := fmt.Sprintf("image/image%02d.png", i)
 		images[fname] = dxlib.LoadGraph(fname)
 	}
@@ -57,7 +57,7 @@ func main() {
 			vx := 20.0 * (rand.Float32() - 0.5)
 			vy := 20.0 * (rand.Float32() - 0.5)
 			width := int(200.0 * (rand.Float32() - 0.5))
-			fname := fmt.Sprintf("image/image%02d.png", rand.Int31n(50))
+			fname := fmt.Sprintf("image/image%02d.png", rand.Int31n(9))
 			image := images[fname]
 			newActor := &Actor{x: 320, y: 240, vx: vx, vy: vy, width: width, image: image}
 			actors.PushBack(newActor)
