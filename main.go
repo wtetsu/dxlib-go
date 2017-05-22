@@ -25,7 +25,7 @@ func (actor *Actor) draw() {
 	y1 := int(actor.y) - actor.width
 	x2 := int(actor.x) + actor.width
 	y2 := int(actor.y) + actor.width
-	dxlib.DrawExtendGraph(x1, y1, x2, y2, int(actor.image), 0)
+	dxlib.DrawExtendGraph(x1, y1, x2, y2, int(actor.image), 1)
 }
 
 func (actor *Actor) isOffScreen() bool {
@@ -56,7 +56,7 @@ func main() {
 		if i%2 == 0 {
 			vx := 20.0 * (rand.Float32() - 0.5)
 			vy := 20.0 * (rand.Float32() - 0.5)
-			width := int(200.0 * (rand.Float32() - 0.5))
+			width := int(10 + 50.0 * (rand.Float32()))
 			fname := fmt.Sprintf("image/image%02d.png", rand.Int31n(9))
 			image := images[fname]
 			newActor := &Actor{x: 320, y: 240, vx: vx, vy: vy, width: width, image: image}
