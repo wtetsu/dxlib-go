@@ -7,6 +7,8 @@ go get golang.org/x/text/encoding/japanese
 go build
 ```
 
+![ss01](https://raw.githubusercontent.com/wtetsu/dxlib-go/images/ss01.png)
+
 ## Example of main loop
 ```go
 dxlib.DxLib_Init()
