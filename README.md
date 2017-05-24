@@ -9,7 +9,6 @@ go build
 
 ![ss01](https://raw.githubusercontent.com/wtetsu/dxlib-go/images/ss01.png)
 
-animation gif
 ![ss02](https://raw.githubusercontent.com/wtetsu/dxlib-go/images/ss02.gif)
 
 ## Example of main loop
